@@ -98,7 +98,7 @@ function App() {
           ))}
         </select>          
         )}
-        *****
+
       {genshinState.elements && (
           <select name="elements">
             <option value="">Seleccione un elemento</option>
