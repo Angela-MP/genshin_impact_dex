@@ -66,6 +66,79 @@ function App() {
           ))}
         </select>          
         )}
+      {genshinState.boss && (
+          <select name="boss">
+            <option value="">Seleccione un jefe</option>
+              {genshinState.boss.map((boss)=>(
+                <option key={boss} value={boss}>{boss}</option>
+          ))}
+        </select>          
+        )} 
+      {genshinState.characters && (
+          <select name="characters">
+            <option value="">Seleccione un personaje</option>
+              {genshinState.characters.map((characters)=>(
+                <option key={characters} value={characters}>{characters}</option>
+          ))}
+        </select>          
+        )}
+      {genshinState.consumables && (
+          <select name="consumables">
+            <option value="">Seleccione un consumible</option>
+              {genshinState.consumables.map((consumables)=>(
+                <option key={consumables} value={consumables}>{consumables}</option>
+          ))}
+        </select>          
+        )} 
+      {genshinState.domains && (
+          <select name="domains">
+            <option value="">Seleccione un dominio</option>
+              {genshinState.domains.map((domains)=>(
+                <option key={domains} value={domains}>{domains}</option>
+          ))}
+        </select>          
+        )}
+        *****
+      {genshinState.elements && (
+          <select name="elements">
+            <option value="">Seleccione un elemento</option>
+              {genshinState.elements.map((elements)=>(
+                <option key={elements} value={elements}>{elements}</option>
+          ))}
+        </select>          
+        )}
+      {genshinState.enemies && (
+          <select name="enemies">
+            <option value="">Seleccione un enemigo</option>
+              {genshinState.enemies.map((enemies)=>(
+                <option key={enemies} value={enemies}>{enemies}</option>
+          ))}
+        </select>          
+        )}
+      {genshinState.materials && (
+          <select name="materials">
+            <option value="">Seleccione un material</option>
+              {genshinState.materials.map((materials)=>(
+                <option key={materials} value={materials}>{materials}</option>
+          ))}
+        </select>          
+        )}
+      {genshinState.nations && (
+          <select name="nations">
+            <option value="">Seleccione una nación</option>
+              {genshinState.nations.map((nations)=>(
+                <option key={nations} value={nations}>{nations}</option>
+          ))}
+        </select>          
+        )}
+      {genshinState.weapons && (
+          <select name="weapons">
+            <option value="">Seleccione un arma</option>
+              {genshinState.weapons.map((weapons)=>(
+                <option key={weapons} value={weapons}>{weapons}</option>
+          ))}
+        </select>          
+        )}                                                               
     </div>
   );
 }
